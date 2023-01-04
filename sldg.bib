@@ -56,8 +56,10 @@
 @article{petz2022innovations,
 	author = {Petz, A. and Alexander, P.},
 	journal = {Innovations in Systems and Software Engineering},
-	title = {{An Infrastructure for Faithful Execution of Remote Attestation Protocols}},
-	year = 2022}
+	title = {An Infrastructure for Faithful Execution of Remote Attestation Protocols},
+	publisher = {Nasa Formal Methods (NFM`21)},
+	year = {2022}
+}
 
 @article{comi2022digital,
 	author = {Comi, Matt and Smith, Sarah and Goettlich, Walter A and Alexander, Perry and Davidson, Drew and Staples, William G},
@@ -2301,7 +2303,7 @@
 	volume = {38},
 	year = {2000}}
 
-@electronic{gnuradio,
+@techreport{gnuradio,
 	date-added = {2008-04-29 20:48:36 -0500},
 	date-modified = {2008-04-29 21:03:23 -0500},
 	note = {Available at http://www.gnu.org/software/gnuradio},
@@ -15721,3 +15723,67 @@ This work operates on a recursively
 	title = {Modular Semantics for Model-Oriented Design},
 	type = {PhD Dissertation},
 	year = {2004}}
+
+@inproceedings{Petz::2021::DesignProtocol,
+author = {Petz, Adam and Jurgensen, Grant and Alexander, Perry},
+title = {Design and Formal Verification of a Copland-Based Attestation Protocol},
+year = {2021},
+isbn = {9781450391276},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3487212.3487340},
+doi = {10.1145/3487212.3487340},
+abstract = {We present the design and formal analysis of a remote attestation protocol and accompanying security architecture that generate evidence of trustworthy execution for legacy software. For formal guarantees of measurement ordering and cryptographic evidence strength, we leverage the Copland language and Copland Virtual Machine execution semantics. For isolation of attestation mechanisms we design a layered attestation architecture that leverages the seL4 microkernel. The formal properties of the protocol and architecture together serve to discharge assumptions made by an existing higher-level model-finding tool to characterize all ways an active adversary can corrupt a target and go undetected. As a proof of concept, we instantiate this analysis framework with a specific Copland protocol and security architecture to measure a legacy flight planning application. By leveraging components that are amenable to formal analysis, we demonstrate a principled way to design an attestation protocol and argue for its end-to-end correctness.},
+booktitle = {Proceedings of the 19th ACM-IEEE International Conference on Formal Methods and Models for System Design},
+pages = {111–117},
+numpages = {7},
+keywords = {formal methods, verification, remote attestation},
+location = {Virtual Event, China},
+series = {MEMOCODE '21}
+}
+
+@misc{Carrel:1998:RFC2409,
+series =    {Request for Comments},
+number =    {2409},
+howpublished =  {RFC 2409},
+publisher = {RFC Editor},
+doi =       {10.17487/RFC2409},
+url =       {https://www.rfc-editor.org/info/rfc2409},
+author =    {David Carrel and Dan Harkins},
+title =     {{The Internet Key Exchange (IKE)}},
+pagetotal = {41},
+year =      {1998},
+month =     {nov},
+}
+
+@misc{strongSwan,
+title = {strongSwan},
+howpublished = {\url{https://www.strongswan.org/}},
+note = {Accessed: 2022-06-29},
+author ={Andreas Steffen},
+year =      {2021},
+month =     {Oct},
+}
+
+@misc{Ramsdell:2020:Chase,
+title = {Chase: A model finder for finitary geometric logic},
+author = {John Ramsdell},
+year = {2020},
+howpublished = {\url{https://github.com/ramsdell/chase}}
+}
+
+@misc{baez2022evaluating,
+  title={Evaluating SGX’s Remote Attestation Security Through the Analysis of Copland Phrases},
+  author={Baez, Freddy Eduardo Veloz},
+  year={2022},
+  school={WORCESTER POLYTECHNIC INSTITUTE}
+}
+
+@article{Huang::2009::EffectiveApproach,
+author = {Huang, Xin and Peng, Yuxing},
+year = {2009},
+month = {01},
+pages = {},
+title = {An Effective Approach for Remote Attestation in Trusted Computing},
+journal = {WISA 2009: Proceedings of the 2nd International Symposium on Web Information Systems and Applications}
+}
