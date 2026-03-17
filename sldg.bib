@@ -1,3 +1,38 @@
+@article{Honda:2008:Multiparty-Asynchronous-Session-Types,
+  author     = {Honda, Kohei and Yoshida, Nobuko and Carbone, Marco},
+  title      = {{Multiparty Asynchronous Session Types}},
+  year       = {2016},
+  issue_date = {March 2016},
+  publisher  = {Association for Computing Machinery},
+  address    = {New York, NY, USA},
+  volume     = {63},
+  number     = {1},
+  issn       = {0004-5411},
+  url        = {https://doi.org/10.1145/2827695},
+  doi        = {10.1145/2827695},
+  abstract   = {Communication is a central elements in software development. As a potential typed foundation for structured communication-centered programming, session types have been studied over the past decade for a wide range of process calculi and programming languages, focusing on binary (two-party) sessions. This work extends the foregoing theories of binary session types to multiparty, asynchronous sessions, which often arise in practical communication-centered applications. Presented as a typed calculus for mobile processes, the theory introduces a new notion of types in which interactions involving multiple peers are directly abstracted as a global scenario. Global types retain the friendly type syntax of binary session types while specifying dependencies and capturing complex causal chains of multiparty asynchronous interactions. A global type plays the role of a shared agreement among communication peers and is used as a basis of efficient type-checking through its projection onto individual peers. The fundamental properties of the session type discipline, such as communication safety, progress, and session fidelity, are established for general n-party asynchronous interactions.},
+  journal    = {J. ACM},
+  month      = mar,
+  articleno  = {9},
+  numpages   = {67},
+  keywords   = {Session types, global protocols, global types, progress, projection, the pi-calculus}
+}
+
+@inproceedings{Honda:1998:Language-Primitives-Session-Types,
+  author    = {Honda, Kohei
+               and Vasconcelos, Vasco T.
+               and Kubo, Makoto},
+  editor    = {Hankin, Chris},
+  title     = {Language primitives and type discipline for structured communication-based programming},
+  booktitle = {Programming Languages and Systems},
+  year      = {1998},
+  publisher = {Springer Berlin Heidelberg},
+  address   = {Berlin, Heidelberg},
+  pages     = {122--138},
+  abstract  = {We introduce basic language constructs and a type discipline as a foundation of structured communication-based concurrent programming. The constructs, which are easily translatable into the summation-less asynchronous $\pi$-calculus, allow programmers to organise programs as a combination of multiple flows of (possibly unbounded) reciprocal interactions in a simple and elegant way, subsuming the preceding communication primitives such as method invocation and rendez-vous. The resulting syntactic structure is exploited by a type discipline {\`a} la ML, which offers a high-level type abstraction of interactive behaviours of programs as well as guaranteeing the compatibility of interaction patterns between processes in a well-typed program. After presenting the formal semantics, the use of language constructs is illustrated through examples, and the basic syntactic results of the type discipline are established. Implementation concerns are also addressed.},
+  isbn      = {978-3-540-69722-0}
+}
+
 @inproceedings{Creese:2004:Authentication-for-Pervasive-Computing,
   author    = {Creese, Sadie
                and Goldsmith, Michael
