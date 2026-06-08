@@ -1,3 +1,46 @@
+@misc{LoonwerksINSPECTA,
+  author       = {Loonwerks},
+  title        = {{INSPECTA}},
+  howpublished = {\url{https://loonwerks.com/projects/inspecta.html}},
+  note         = {Accessed: [2026-06-08]}
+}
+
+@article{Lattuada:2023:Verus-Linear-Ghost-Types,
+  author     = {Lattuada, Andrea and Hance, Travis and Cho, Chanhee and Brun, Matthias and Subasinghe, Isitha and Zhou, Yi and Howell, Jon and Parno, Bryan and Hawblitzel, Chris},
+  title      = {Verus: Verifying Rust Programs using Linear Ghost Types},
+  year       = {2023},
+  issue_date = {April 2023},
+  publisher  = {Association for Computing Machinery},
+  address    = {New York, NY, USA},
+  volume     = {7},
+  number     = {OOPSLA1},
+  url        = {https://doi.org/10.1145/3586037},
+  doi        = {10.1145/3586037},
+  abstract   = {The Rust programming language provides a powerful type system that checks linearity and borrowing, allowing code to safely manipulate memory without garbage collection and making Rust ideal for developing low-level, high-assurance systems. For such systems, formal verification can be useful to prove functional correctness properties beyond type safety. This paper presents Verus, an SMT-based tool for formally verifying Rust programs.   With Verus, programmers express proofs and specifications using the Rust language, allowing proofs to take advantage of Rust's linear types and borrow checking. We show how this allows proofs to manipulate linearly typed permissions that let Rust code safely manipulate memory, pointers, and concurrent resources. Verus organizes proofs and specifications using a novel mode system that distinguishes specifications, which are not checked for linearity and borrowing, from executable code and proofs, which are checked for linearity and borrowing.   We formalize Verus' linearity, borrowing, and modes in a small lambda calculus, for which we prove type safety and termination of specifications and proofs. We demonstrate Verus on a series of examples, including pointer-manipulating code (an xor-based doubly linked list), code with interior mutability, and concurrent code.},
+  journal    = {Proc. ACM Program. Lang.},
+  month      = apr,
+  articleno  = {85},
+  numpages   = {30},
+  keywords   = {systems verification, linear types, Rust}
+}
+
+@inproceedings{Hatcliff:2021:HAMR-AADL,
+  author    = {Hatcliff, John
+               and Belt, Jason
+               and Robby
+               and Carpenter, Todd},
+  editor    = {Margaria, Tiziana
+               and Steffen, Bernhard},
+  title     = {HAMR: An AADL Multi-platform Code Generation Toolset},
+  booktitle = {Leveraging Applications of Formal Methods, Verification and Validation},
+  year      = {2021},
+  publisher = {Springer International Publishing},
+  address   = {Cham},
+  pages     = {274--295},
+  abstract  = {This paper describes the High-Assurance Model-based Rapid engineering for embedded systems (HAMR) tool-kit that generates high-assurance software from standards-based system architecture models for embedded cyber-physical systems. HAMR's computational model is based on standardized run-time services and communication models that together provide an abstract platform-independent realization which can be instantiated by back-end translations for different platforms. HAMR currently targets multiple platforms, including rapid prototyping targets such as Java Virtual Machines, Linux, as well as the formally verified seL4 space partitioned micro-kernel.},
+  isbn      = {978-3-030-89159-6}
+}
+
 @misc{Lean4Json,
   author       = {{Lean developers}},
   title        = {{Lean 4 JSON support}},
