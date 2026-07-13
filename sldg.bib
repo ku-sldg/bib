@@ -332,7 +332,6 @@
   isbn      = {9781605588940},
   publisher = {Association for Computing Machinery},
   address   = {New York, NY, USA},
-  url       = {https://doi.org/10.1145/1653662.1653711},
   doi       = {10.1145/1653662.1653711},
   abstract  = {Device attestation is an essential feature in many security protocols and applications. The lack of dedicated hardware and the impossibility to physically access devices to be attested, makes attestation of embedded devices, in applications such as Wireless Sensor Networks, a prominent challenge. Several software-based attestation techniques have been proposed that either rely on tight time constraints or on the lack of free space to store malicious code. This paper investigates the shortcomings of existing software-based attestation techniques. We first present two generic attacks, one based on a return-oriented rootkit and the other on code compression. We further describe specific attacks on two existing proposals, namely SWATT and ICE-based schemes, and argue about the difficulty of fixing them. All attacks presented in this paper were implemented and validated on commodity sensors.},
   booktitle = {Proceedings of the 16th ACM Conference on Computer and Communications Security},
@@ -703,10 +702,8 @@
   pages     = {552--561},
   publisher = {{ACM}},
   year      = {2007},
-  url       = {https://doi.org/10.1145/1315245.1315313},
   doi       = {10.1145/1315245.1315313},
   timestamp = {Tue, 10 Nov 2020 20:00:36 +0100},
-  biburl    = {https://dblp.org/rec/conf/ccs/Shacham07.bib},
   bibsource = {dblp computer science bibliography, https://dblp.org}
 }
 
@@ -737,7 +734,6 @@
 
 
 @manual{Trusted-Computing-Group:2025:TPM-2.0-Library,
-  address      = {3855 SW 153rd Drive, Beaverton, OR 97003},
   author       = {{Trusted Computing Group}},
   keywords     = {security, tpm},
   month        = {March},
@@ -770,7 +766,6 @@
 }
 
 @manual{Trusted-Computing-Group:2025:TCG-TPM-2.0-Part0-Introduction,
-  address      = {3855 SW 153rd Drive, Beaverton, OR 97003},
   author       = {{Trusted Computing Group}},
   edition      = {Version 184},
   keywords     = {security, tpm},
@@ -782,7 +777,6 @@
 }
 
 @manual{Trusted-Computing-Group:2025:TCG-TPM-2.0-Part2-Structures,
-  address      = {3855 SW 153rd Drive, Beaverton, OR 97003},
   author       = {{Trusted Computing Group}},
   edition      = {Version 184},
   keywords     = {security, tpm},
@@ -794,7 +788,6 @@
 }
 
 @manual{Trusted-Computing-Group:2025:TCG-TPM-2.0-Part3-Commands,
-  address      = {3855 SW 153rd Drive, Beaverton, OR 97003},
   author       = {{Trusted Computing Group}},
   edition      = {Version 184},
   keywords     = {security, tpm},
@@ -954,22 +947,20 @@
 }
 
 @inproceedings{Chen:2006:Protocol-Property-Based-Attestation,
-  abstract   = {The Trusted Computing Group (TCG) has issued several specifications to enhance the architecture of common computing platforms by means of new functionalities, amongst others the (binary) attestation to verify the integrity of a (remote) computing platform/application. However, as pointed out recently, the binary attestation has some shortcomings, in particular when used for applications: First, it reveals information about the configuration of a platform (hardware and software) or application. This can be misused to discriminate certain configurations (e.g., operating systems) and the corresponding vendors, or be exploited to mount attacks. Second, it requires the verifier to know all possible ``trusted'' configurations of all platforms as well as managing updates and patches that change the configuration. Third, it does not necessarily imply that the platform complies with desired (security) properties. A recent proposal to overcome these problems is to transform the binary attestation into property-based attestation, which requires to only attest whether a platform or an application fulfills the desired (security) requirements without revealing the specific software or/and hardware configuration.Based on previous works, we propose a concrete efficient property-based attestation protocol within an abstract model for the main functionalities provided by TCG-compliant platforms. We prove the security of this protocol under the strong RSA assumption and the discrete logarithm assumption in the random oracle model. Our scheme allows blind verification and revocation of mappings between properties and configurations.},
-  address    = {New York, NY, USA},
-  author     = {Chen, Liqun and Landfermann, Rainer and L\"{o}hr, Hans and Rohe, Markus and Sadeghi, Ahmad-Reza and St\"{u}ble, Christian},
-  booktitle  = {Proceedings of the First ACM Workshop on Scalable Trusted Computing},
-  doi        = {10.1145/1179474.1179479},
-  isbn       = {1595935487},
-  keywords   = {property-based attestation, security kernels, TCG binary attestation, zero-knowledge proof of knowledge},
-  location   = {Alexandria, Virginia, USA},
-  numpages   = {10},
-  pages      = {7--16},
-  publisher  = {Association for Computing Machinery},
-  series     = {STC '06},
-  title      = {A Protocol for Property-Based Attestation},
-  url        = {https://doi.org/10.1145/1179474.1179479},
-  year       = {2006},
-  bdsk-url-1 = {https://doi.org/10.1145/1179474.1179479}
+  abstract  = {The Trusted Computing Group (TCG) has issued several specifications to enhance the architecture of common computing platforms by means of new functionalities, amongst others the (binary) attestation to verify the integrity of a (remote) computing platform/application. However, as pointed out recently, the binary attestation has some shortcomings, in particular when used for applications: First, it reveals information about the configuration of a platform (hardware and software) or application. This can be misused to discriminate certain configurations (e.g., operating systems) and the corresponding vendors, or be exploited to mount attacks. Second, it requires the verifier to know all possible ``trusted'' configurations of all platforms as well as managing updates and patches that change the configuration. Third, it does not necessarily imply that the platform complies with desired (security) properties. A recent proposal to overcome these problems is to transform the binary attestation into property-based attestation, which requires to only attest whether a platform or an application fulfills the desired (security) requirements without revealing the specific software or/and hardware configuration.Based on previous works, we propose a concrete efficient property-based attestation protocol within an abstract model for the main functionalities provided by TCG-compliant platforms. We prove the security of this protocol under the strong RSA assumption and the discrete logarithm assumption in the random oracle model. Our scheme allows blind verification and revocation of mappings between properties and configurations.},
+  address   = {New York, NY, USA},
+  author    = {Chen, Liqun and Landfermann, Rainer and L\"{o}hr, Hans and Rohe, Markus and Sadeghi, Ahmad-Reza and St\"{u}ble, Christian},
+  booktitle = {Proceedings of the First ACM Workshop on Scalable Trusted Computing},
+  doi       = {10.1145/1179474.1179479},
+  isbn      = {1595935487},
+  keywords  = {property-based attestation, security kernels, TCG binary attestation, zero-knowledge proof of knowledge},
+  location  = {Alexandria, Virginia, USA},
+  numpages  = {10},
+  pages     = {7--16},
+  publisher = {Association for Computing Machinery},
+  series    = {STC '06},
+  title     = {A Protocol for Property-Based Attestation},
+  year      = {2006}
 }
 
 @inproceedings{Ott:2023:Universal-Remote-Attestation-Cloud-Platforms,
@@ -2364,7 +2355,6 @@
 }
 
 @manual{Trusted-Computing-Group:07:TCG-TPM-Specifi,
-  address       = {3885 SW 153rd Drive, Beaverton, OR 97006},
   author        = {{Trusted Computing Group}},
   date-added    = {2013-08-23 15:47:23 +0000},
   date-modified = {2013-08-23 15:47:44 +0000},
@@ -4023,7 +4013,6 @@
 }
 
 @manual{---::TCG-TPM-Specifi,
-  address       = {3885 SW 153rd Drive, Beaverton, OR 97006},
   author        = {{---}},
   date-added    = {2008-10-30 10:30:22 -0500},
   date-modified = {2010-12-21 15:01:56 -0600},
